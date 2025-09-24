@@ -2,11 +2,11 @@
 
 Projet réalisé par **Osama** et **Quentin**.
 
-## 🚀 Description
+## Description
 Ce projet est une démonstration simple de l’utilisation de **WebSocket** avec **Flask** et **Socket.IO**.  
 L’application permet au client de demander l’heure courante au serveur, qui lui répond en JSON.
 
-## ⚙️ Fonctionnement
+## Fonctionnement
 1. L’utilisateur clique sur le bouton **"Obtenir l'heure"** dans la page web.
 2. Le **client (JavaScript)** envoie un événement Socket.IO nommé **`get_time`** au serveur Flask.
 3. Le **serveur Flask** répond avec un objet JSON contenant l’heure courante.
@@ -35,5 +35,3 @@ L’application permet au client de demander l’heure courante au serveur, qui 
 - JavaScript (Socket.IO côté client)  
 
 ---
-
-✨ Ce projet illustre la communication **temps réel** entre un client et un serveur via **WebSockets**.
