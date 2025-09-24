@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Heure via Flask-SocketIO</title>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+  <h1>Heure via Flask-SocketIO</h1>
+  <button id="btn">Obtenir l'heure</button>
+  <pre id="output">(en attente…)</pre>
+
+  <script>
+    const socket = io("http://localhost:5000");
+
+    const btn = document.getElementById("btn");
+    const out = document.getElementById("output");
+
+    btn.addEventListener("click", () => {
+      socket.emit("get_time");
+    });
+
+    socket.on("time_response", (data) => {
+      out.textContent = JSON.stringify(data, null, 2);
+    });
+  </script>
+</body>
+</html>
