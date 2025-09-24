@@ -20,14 +20,15 @@ L’application permet au client de demander l’heure courante au serveur, qui 
 }
 ```
 
+## 🖥️ Exemple de page
+
+<img width="1470" height="956" alt="Capture d’écran 2025-09-24 à 10 18 02" src="https://github.com/user-attachments/assets/fbf6a258-8bd7-419b-b878-6153011b37c2" />
+
+
 ### Schéma de communication
 - **Client → Serveur** : `get_time`  
 - **Serveur → Client** : `time_response` + payload JSON (heure courante)
 - Le client demande l’heure au serveur avec "get_time", et le serveur lui répond avec "time_response" contenant l’heure courante en JSON.
-
-## 🖥️ Exemple de page
-
-<img width="1470" height="956" alt="Capture d’écran 2025-09-24 à 10 18 02" src="https://github.com/user-attachments/assets/fbf6a258-8bd7-419b-b878-6153011b37c2" />
 
 
 ## 📦 Technologies utilisées
