@@ -23,7 +23,7 @@ L’application permet au client de demander l’heure courante au serveur, qui 
 ### Schéma de communication
 - **Client → Serveur** : `get_time`  
 - **Serveur → Client** : `time_response` + payload JSON (heure courante)
-Le client demande l’heure au serveur avec "get_time", et le serveur lui répond avec "time_response" contenant l’heure courante en JSON.
+- Le client demande l’heure au serveur avec "get_time", et le serveur lui répond avec "time_response" contenant l’heure courante en JSON.
 
 ## 🖥️ Exemple de page
 
